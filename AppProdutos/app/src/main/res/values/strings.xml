@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">CC - Commercial Controler</string>
+    <string-array name="mesas">
+        <item>Localidade</item>
+        <item>Balcão</item>
+        <item>Área Externa</item>
+    </string-array>
+    <string-array name="tipo">
+        <item>Tipo de Produto</item>
+        <item>Lanches</item>
+        <item>Porções</item>
+        <item>Bebidas</item>
+    </string-array>
+</resources>

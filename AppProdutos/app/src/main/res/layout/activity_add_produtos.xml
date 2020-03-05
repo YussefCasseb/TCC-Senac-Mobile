@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProdutos">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/Comanda"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Comanda" />
+
+        <Spinner
+            android:id="@+id/Mesas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:theme="@style/SpinnerStyle"/>
+
+        <EditText
+            android:id="@+id/Observ"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:text="Sem Observações" />
+
+        <Button
+            android:id="@+id/BTCad"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="8dp"
+            android:background="@android:color/holo_orange_dark"
+            android:textColor="@android:color/black"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:text="Abrir Mesa" />
+
+        <TextView
+            android:id="@+id/TVValor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Valor Total: R$ 0.0"
+            android:textAlignment="center"
+            android:textColor="#139E22"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/Tipo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:theme="@style/SpinnerStyle"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listaDeProdutos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout">
+    </ListView>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>
